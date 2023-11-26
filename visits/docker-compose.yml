@@ -6,3 +6,5 @@ services:
     build: ./
     ports:
       - "4001:8081"
+    depends_on:
+      - "redis-server"
